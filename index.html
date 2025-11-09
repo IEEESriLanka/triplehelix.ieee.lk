@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Sri Lanka IAG Roundtable 2025</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple scrollbar for aesthetics */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #06b6d4; /* Cyan-500 */
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #111827; /* Gray-900 */
+        }
+        .text-glow {
+            text-shadow: 0 0 8px rgba(14, 165, 233, 0.5), 0 0 20px rgba(14, 165, 233, 0.3);
+        }
+        .card-glow {
+            box-shadow: 0 0 15px rgba(14, 165, 233, 0.1), 0 0 5px rgba(14, 165, 233, 0.05);
+        }
+    </style>
+    <script>
+        // Tailwind custom theme configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0a101f', // Very dark blue/charcoal
+                        'brand-medium': '#111827', // Gray-900
+                        'brand-light': '#1f2937', // Gray-800
+                        'brand-accent-blue': '#0ea5e9', // Sky-500
+                        'brand-accent-teal': '#06b6d4', // Cyan-500
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-brand-dark text-gray-300 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-brand-dark/90 backdrop-blur-md sticky top-0 z-50 shadow-lg border-b border-brand-light/50">
+        <nav class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+            <!-- Logo / Event Title -->
+            <a href="#" class="text-xl font-bold text-white tracking-tight">
+                IEEE SL <span class="text-brand-accent-blue">IAG Roundtable</span>
+            </a>
+            
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">About</a>
+                <a href="#past-success" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Past Success</a>
+                <a href="#focus" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Core Focus</a>
+                <a href="#tracks" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Tracks</a>
+                <a href="#agenda" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Agenda</a>
+                <a href="#contact" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-center relative overflow-hidden">
+            <!-- Background Gradient & Abstract Elements -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-brand-dark"></div>
+                <!-- Abstract futuristic background -->
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://placehold.co/1920x1080/0a101f/1f2937?text=Digital+Connections');"></div>
+                <!-- Gradient overlays -->
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-dark/70 to-brand-dark"></div>
+                <div class="absolute top-0 left-0 w-1/2 h-1/2 bg-brand-accent-blue/10 rounded-full filter blur-[150px] opacity-30"></div>
+                <div class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-brand-accent-teal/10 rounded-full filter blur-[150px] opacity-30"></div>
+            </div>
+            
+            <div class="container mx-auto px-6 py-24 z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight text-glow">
+                    IEEE Sri Lanka
+                    <br class="hidden md:block">
+                    <span class="text-brand-accent-blue">Industry-Academia-Government</span>
+                    Roundtable 2025
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 font-medium">
+                    "Empowering Sri Lankan Innovation in the Digital Age"
+                </p>
+                <div class="bg-brand-medium/50 backdrop-blur-sm border border-brand-light/50 rounded-lg p-6 max-w-2xl mx-auto inline-block shadow-xl">
+                    <div class="text-lg text-gray-200 space-y-3">
+                        <p class="flex items-center justify-center space-x-2">
+                            <i data-lucide="calendar" class="w-5 h-5 text-brand-accent-teal"></i>
+                            <span class="font-semibold text-white">Date:</span> 24th November 2025
+                        </p>
+                        <p class="flex items-center justify-center space-x-2">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-accent-teal"></i>
+                            <span class="font-semibold text-white">Venue:</span> Waters Edge Hotel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Triple Helix Section -->
+        <section id="about" class="py-20 bg-brand-dark">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-glow">Bridging Innovation: The Triple Helix in Action</h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        This roundtable convenes visionary leaders from Sri Lanka's key sectors, fostering a synergistic environment for collaboration. By uniting the three pillars of the Triple Helix Model, we aim to accelerate national progress and drive a unified innovation strategy.
+                    </p>
+                </div>
+                
+                <!-- Triple Helix Pillars -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Industry Pillar -->
+                    <div class="bg-brand-medium p-8 rounded-lg shadow-2xl text-center border border-brand-light card-glow transform hover:-translate-y-2 transition-transform duration-300">
+                        <i data-lucide="factory" class="w-12 h-12 text-brand-accent-blue mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Industry</h3>
+                        <p class="text-gray-300">
+                            Driving economic growth, identifying market needs, and applying cutting-edge research to create real-world solutions and commercial value.
+                        </p>
+                    </div>
+                    <!-- Academia Pillar -->
+                    <div class="bg-brand-medium p-8 rounded-lg shadow-2xl text-center border border-brand-light card-glow transform hover:-translate-y-2 transition-transform duration-300">
+                         <i data-lucide="graduation-cap" class="w-12 h-12 text-brand-accent-teal mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Academia</h3>
+                        <p class="text-gray-300">
+                            Fostering foundational research, developing skilled talent, and serving as the engine of discovery for next-generation technologies.
+                        </p>
+                    </div>
+                    <!-- Government Pillar -->
+                    <div class="bg-brand-medium p-8 rounded-lg shadow-2xl text-center border border-brand-light card-glow transform hover:-translate-y-2 transition-transform duration-300">
+                         <i data-lucide="landmark" class="w-12 h-12 text-yellow-400 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Government</h3>
+                        <p class="text-gray-300">
+                            Creating supportive policy, enabling strategic investment, and aligning national objectives to build a robust and competitive innovation ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Success (2024) Section -->
+        <section id="past-success" class="py-20 bg-brand-medium">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-glow">Past Success: Roundtable 2024</h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        Building on a foundation of proven success, the 2024 roundtable set a high benchmark for cross-sector collaboration.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Stat Card 1 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-xl text-center">
+                        <span class="text-5xl font-extrabold text-brand-accent-teal">150+</span>
+                        <p class="text-xl text-gray-200 mt-2">Cross-Sector Participants</p>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-xl text-center">
+                        <span class="text-5xl font-extrabold text-brand-accent-teal">40+</span>
+                        <p class="text-xl text-gray-200 mt-2">Leading Organizations</p>
+                    </div>
+                    <!-- Stat Card 3 -->
+                    <div class="bg-brand-light p-8 rounded-lg shadow-xl text-center">
+                        <span class="text-5xl font-extrabold text-brand-accent-teal">25,000+</span>
+                        <p class="text-xl text-gray-200 mt-2">Media Impressions</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-400 mt-8 text-lg">
+                    Featured top-tier universities, leading private firms, and key government ministries.
+                </p>
+
+                <!-- Added: Past Success Images -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <img src="https://placehold.co/600x400/1f2937/4b5563?text=Roundtable+2024+Highlight" alt="Past event photo 1" class="rounded-lg shadow-xl aspect-video object-cover" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+Error';">
+                    <img src="https://placehold.co/600x400/1f2937/4b5563?text=Roundtable+2024+Speaker" alt="Past event photo 2" class="rounded-lg shadow-xl aspect-video object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+Error';">
+                    <img src="https://placehold.co/600x400/1f2937/4b5563?text=Roundtable+2024+Audience" alt="Past event photo 3" class="rounded-lg shadow-xl aspect-video object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+Error';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Tracks Section -->
+        <section id="tracks" class="py-20 bg-brand-medium">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-glow">Key Roundtable Tracks</h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        Delegates will join one of four specialized tracks for in-depth, sector-specific discussions.
+                    </p>
+                </div>
+                
+                <!-- Tracks Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Track 1 -->
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                        <i data-lucide="circuit-board" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Electronics & Manufacturing</h3>
+                        <p class="text-gray-400 text-sm">Innovations in hardware, smart production, IoT, and building resilient supply chains.</p>
+                    </div>
+                    <!-- Track 2 -->
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                        <i data-lucide="code-2" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Computer Science & IT</h3>
+                        <p class="text-gray-400 text-sm">Leveraging AI, data science, cybersecurity, and software engineering to power the digital economy.</p>
+                    </div>
+                    <!-- Track 3 -->
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                        <i data-lucide="wind" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Power & Energy</h3>
+                        <p class="text-gray-400 text-sm">Focusing on renewable energy, smart grids, sustainability, and energy policy for self-sufficiency.</p>
+                    </div>
+                    <!-- Track 4 -->
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                        <i data-lucide="satellite" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Telecommunication</h3>
+                        <p class="text-gray-400 text-sm">Exploring 5G adoption, digital infrastructure, connectivity, and the future of communication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Agenda Section -->
+        <section id="agenda" class="py-20 bg-brand-dark">
+            <div class="container mx-auto max-w-3xl px-6">
+                <div class="text-center mb-12">
+                    <!-- Added: Venue Banner Placeholder -->
+                    <img src="https://placehold.co/1200x400/1f2937/0a101f?text=Waters+Edge+Hotel+Banner" alt="Waters Edge Hotel" class="rounded-lg shadow-xl aspect-[3/1] object-cover w-full mb-8"
+                         onerror="this.onerror=null;this.src='https://placehold.co/1200x400/1f2937/0a101f?text=Image+Error';">
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-glow">Program Outline</h2>
+                    <!-- Added: Date and Location -->
+                    <p class="text-lg text-brand-accent-teal font-semibold">24th November 2025 at Waters Edge Hotel</p>
+                    <p class="text-lg text-gray-300 mt-2">A high-level overview of the day's events.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">08:30 AM</span>
+                        <div class_name="w-4 h-4 bg-brand-accent-teal rounded-full"></div>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Registration & Welcome Coffee</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">09:00 AM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Welcome Address & Opening Remarks</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">09:15 AM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Keynote Speech: "Sri Lanka's Digital 2030 Vision"</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">09:45 AM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Panel Discussion: "The Triple Helix Synergy"</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">10:45 AM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Breakout Sessions: Roundtable Tracks</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">12:45 PM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Networking Lunch</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">03:30 PM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Common Discussion: Synthesizing Track Outcomes</div>
+                    </div>
+                    <!-- Agenda Item -->
+                    <div class="flex items-center space-x-4">
+                        <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">04:15 PM</span>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Closing Remarks & Networking Session</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-brand-medium">
+            <div class="container mx-auto max-w-5xl px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-glow">Contact Us</h2>
+                <p class="text-lg text-gray-300 mb-12">
+                    This is an invitation-only event. For any inquiries regarding the roundtable, please reach out to our organizing team.
+                </p>
+                
+                <!-- Updated: Contacts with Images -->
+                <div class="flex flex-wrap justify-center gap-12">
+                    <!-- Contact 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/0ea5e9/ffffff?text=Viraj+A." alt="Viraj Ariyawangsha" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                             onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=V.A.';">
+                        <h4 class="text-lg font-semibold text-white">Viraj Ariyawangsha</h4>
+                        <p class="text-gray-400">Co-Chairperson</p>
+                        <a href="mailto:aryans.viraj@gmail.com" class="text-brand-accent-blue hover:text-brand-accent-teal">aryans.viraj@gmail.com</a>
+                    </div>
+                    <!-- Contact 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/0ea5e9/ffffff?text=Tharushi+L." alt="Tharushi Liyanage" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                             onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=T.L.';">
+                        <h4 class="text-lg font-semibold text-white">Tharushi Liyanage</h4>
+                        <p class="text-gray-400">Co-Chairperson</p>
+                        <a href="mailto:tharushidilhara@ieee.org" class="text-brand-accent-blue hover:text-brand-accent-teal">tharushidilhara@ieee.org</a>
+                    </div>
+                    <!-- Contact 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/0ea5e9/ffffff?text=Themiya+N." alt="Themiya Nanayakkara" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                             onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=T.N.';">
+                        <h4 class="text-lg font-semibold text-white">Themiya Nanayakkara</h4>
+                        <p class="text-gray-400">Finance Coordinator</p>
+                        <a href="mailto:theminana03@gmail.com" class="text-brand-accent-blue hover:text-brand-accent-teal">theminana03@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark py-8 border-t border-brand-light/50">
+        <div class="container mx-auto max-w-7xl px-6 text-center text-gray-400">
+            <p>&copy; 2025 IEEE Sri Lanka Section. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                Advancing Technology for Humanity
+            </p>
+            <!-- Added: Quick Link -->
+            <p class="text-sm mt-2">
+                Visit: <a href="https://ieee.lk" target="_blank" rel="noopener noreferrer" class="text-brand-accent-blue hover:text-brand-accent-teal underline">IEEE Sri Lanka Section Homepage</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script to load icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
