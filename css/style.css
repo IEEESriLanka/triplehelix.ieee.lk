@@ -1,0 +1,24 @@
+/* Custom CSS for IEEE Sri Lanka IAG Roundtable 2025 */
+
+/* Inter Font is already loaded in HTML head */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Simple scrollbar for aesthetics */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #06b6d4; /* Cyan-500 */
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+    background-color: #111827; /* Gray-900 */
+}
+
+/* Custom classes for visual effects */
+/* Note: text-glow removed as requested */
+.card-glow {
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.1), 0 0 5px rgba(14, 165, 233, 0.05);
+}

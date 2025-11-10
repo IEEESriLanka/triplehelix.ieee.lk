@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body class="bg-brand-dark text-gray-300 antialiased">
 
@@ -22,9 +22,32 @@
                 IEEE SL <span class="text-brand-accent-blue">IAG Roundtable</span>
             </a>
             
-            <div class="hidden md:flex space-x-6">
+            <div class="hidden md:flex space-x-6 items-center">
                 <a href="#home" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Home</a>
-                <a href="#tracks" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Tracks</a>
+                
+                <div class="relative group">
+                    <a href="#tracks" class="text-gray-300 hover:text-brand-accent-blue transition duration-300 inline-flex items-center space-x-1">
+                        <span>Tracks</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 group-hover:text-brand-accent-blue"></i>
+                    </a>
+
+                    <div class="absolute left-1/2 -translate-x-1/2 mt-0 w-64 rounded-md shadow-2xl z-20 hidden group-hover:block 
+                                bg-brand-medium border border-brand-light/50 backdrop-blur-sm overflow-hidden">
+                        
+                        <a href="electronics.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150 border-b border-brand-dark/50">
+                            Electronics and Smart Manufacturing
+                        </a>
+                        <a href="computing.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150 border-b border-brand-dark/50">
+                            Computing
+                        </a>
+                        <a href="power-energy.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150 border-b border-brand-dark/50">
+                            Power & Energy
+                        </a>
+                        <a href="telecommunications.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150">
+                            Telecommunications
+                        </a>
+                    </div>
+                </div>
                 <a href="#agenda" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Program</a>
                 <a href="#contact" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Contact</a>
             </div>
@@ -76,7 +99,7 @@
         <section id="about" class="py-20 bg-brand-dark">
             <div class="container mx-auto max-w-7xl px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Bridging Innovation: The Triple Helix Model of Innovation in Action</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Bridging Innovation: The Triple Helix Model in Action</h2>
                     <p class="text-lg text-gray-300 max-w-3xl mx-auto">
                         This Roundtable unites visionary leaders from Sri Lanka’s key sectors, creating a collaborative platform that bridges industry, academia, and government. Guided by the <b>Triple Helix Model of Innovation</b>, we aim to drive a unified innovation strategy that accelerates national development and sustainable progress.
                     </p>
@@ -87,21 +110,21 @@
                         <i data-lucide="factory" class="w-12 h-12 text-brand-accent-blue mx-auto mb-4"></i>
                         <h3 class="text-2xl font-semibold text-white mb-3">Industry</h3>
                         <p class="text-gray-300">
-                            Driving economic growth, identifying market needs, and applying cutting-edge research to create real-world solutions and commercial value.
+                            Powering economic growth by turning research and innovation into real-world solutions and market value.
                         </p>
                     </div>
                     <div class="bg-brand-medium p-8 rounded-lg shadow-2xl text-center border border-brand-light card-glow transform hover:-translate-y-2 transition-transform duration-300">
                          <i data-lucide="graduation-cap" class="w-12 h-12 text-brand-accent-teal mx-auto mb-4"></i>
                         <h3 class="text-2xl font-semibold text-white mb-3">Academia</h3>
                         <p class="text-gray-300">
-                            Fostering foundational research, developing skilled talent, and serving as the engine of discovery for next-generation technologies.
+                            Advancing research, nurturing talent, and driving discovery to power next-generation technologies.
                         </p>
                     </div>
                     <div class="bg-brand-medium p-8 rounded-lg shadow-2xl text-center border border-brand-light card-glow transform hover:-translate-y-2 transition-transform duration-300">
                          <i data-lucide="landmark" class="w-12 h-12 text-yellow-400 mx-auto mb-4"></i>
                         <h3 class="text-2xl font-semibold text-white mb-3">Government</h3>
                         <p class="text-gray-300">
-                            Creating supportive policy, enabling strategic investment, and aligning national objectives to build a robust and competitive innovation ecosystem.
+                            Shaping policy, enabling investment, and aligning national priorities to build a strong and competitive innovation ecosystem.
                         </p>
                     </div>
                 </div>
@@ -112,80 +135,114 @@
             <div class="container mx-auto max-w-7xl px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Past Success: Roundtable 2024</h2>
-                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-                        Building on a foundation of proven success, the 2024 roundtable set a high benchmark for cross-sector collaboration.
-                    </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-brand-light p-8 rounded-lg shadow-xl text-center">
-                        <span class="text-5xl font-extrabold text-brand-accent-teal">100+</span>
+                        <span class="text-5xl font-extrabold text-brand-accent-teal">150+</span>
                         <p class="text-xl text-gray-200 mt-2">Cross-Sector Participants</p>
                     </div>
                     <div class="bg-brand-light p-8 rounded-lg shadow-xl text-center">
-                        <span class="text-5xl font-extrabold text-brand-accent-teal">40+</span>
+                        <span class="text-5xl font-extrabold text-brand-accent-teal">80+</span>
                         <p class="text-xl text-gray-200 mt-2">Leading Organizations</p>
                     </div>
                     <div class="bg-brand-light p-8 rounded-lg shadow-xl text-center">
-                        <span class="text-5xl font-extrabold text-brand-accent-teal">25,000+</span>
-                        <p class="text-xl text-gray-200 mt-2">Media Impressions</p>
+                        <span class="text-5xl font-extrabold text-brand-accent-teal">4</span>
+                        <p class="text-xl text-gray-200 mt-2">Specialized Tracks</p>
                     </div>
                 </div>
-                <p class="text-center text-gray-400 mt-8 text-lg">
-                    Featured top-tier universities, leading private firms, and key government ministries.
-                </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                    <img src="IAG1.jpg" alt="Past event photo 1" class="rounded-lg shadow-xl aspect-video object-cover" 
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+Error';">
-                    <img src="IAG2.jpg" alt="Past event photo 2" class="rounded-lg shadow-xl aspect-video object-cover"
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+Error';">
-                    <img src="IAG3.jpg" alt="Past event photo 3" class="rounded-lg shadow-xl aspect-video object-cover"
-                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+Error';">
+                <div class="text-center mb-12"> 
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        Building on a foundation of proven success, the 2024 roundtable set a high benchmark for cross-sector collaboration.
+                    </p>
                 </div>
+                
+                <div id="carousel-container" class="relative w-full overflow-hidden mt-12">
+                    
+                    <button onclick="prevSlide()" 
+                            class="absolute top-1/2 left-0 z-10 p-3 bg-brand-dark/70 rounded-r-lg transform -translate-y-1/2 text-white hover:bg-brand-accent-teal transition duration-200">
+                        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                    </button>
+                    <button onclick="nextSlide()" 
+                            class="absolute top-1/2 right-0 z-10 p-3 bg-brand-dark/70 rounded-l-lg transform -translate-y-1/2 text-white hover:bg-brand-accent-teal transition duration-200">
+                        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </button>
+                    
+                    <div id="carousel-slide" class="flex transition-transform duration-500 ease-in-out">
+                        
+                        <img src="res/images/IAG1.jpg" alt="Past event photo 1" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+1';">
+                        <img src="res/images/IAG2.jpg" alt="Past event photo 2" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+2';">
+                        <img src="res/images/IAG3.jpg" alt="Past event photo 3" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+3';">
+                        <img src="res/images/IAG4.jpg" alt="Past event photo 4" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+4';">
+                        <img src="res/images/IAG5.jpg" alt="Past event photo 5" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+5';">
+                        <img src="res/images/IAG6.png" alt="Past event photo 6" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+6';">
+                        <img src="res/images/IAG7.png" alt="Past event photo 7" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+7';">
+                        <img src="res/images/IAG8.png" alt="Past event photo 8" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+8';">
+                        <img src="res/images/IAG9.png" alt="Past event photo 9" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+9';">
+                        <img src="res/images/IAG10.png" alt="Past event photo 10" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+10';">
+                        <img src="res/images/IAG11.png" alt="Past event photo 11" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+11';">
+                        <img src="res/images/IAG12.png" alt="Past event photo 12" class="w-1/3 flex-shrink-0 aspect-video object-cover rounded-lg p-1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/4b5563?text=Image+12';">
+                      
+                    </div>
+                    
+                    <style>
+                        #carousel-container {
+                            scroll-behavior: smooth; 
+                        }
+                        #carousel-container::-webkit-scrollbar {
+                            display: none;
+                        }
+                        #carousel-container {
+                            -ms-overflow-style: none;
+                            scrollbar-width: none;
+                        }
+                    </style>
+                </div>
+                
             </div>
         </section>
 
         <section id="tracks" class="py-20 bg-brand-medium">
             <div class="container mx-auto max-w-7xl px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Key Roundtable Tracks 2025</h2>
-                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-                        Delegates will join one of six specialized tracks for in-depth, sector-specific discussions.
-                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4"> Specialized Tracks for In-Depth, Sector-Specific Discussions </h2>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
-                        <i data-lucide="circuit-board" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
-                        <h3 class="text-xl font-semibold text-white mb-2">Electronics and Smart Manufacturing</h3>
-                        <p class="text-gray-400 text-sm">Innovations in hardware, smart production, IoT, and building resilient supply chains.</p>
-                    </div>
-                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
-                        <i data-lucide="code-2" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
-                        <h3 class="text-xl font-semibold text-white mb-2">IT & Software</h3>
-                        <p class="text-gray-400 text-sm">Leveraging AI, data science, cybersecurity, and software engineering to power the digital economy.</p>
-                    </div>
-                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
-                        <i data-lucide="wind" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
-                        <h3 class="text-xl font-semibold text-white mb-2">Power & Energy</h3>
-                        <p class="text-gray-400 text-sm">Focusing on renewable energy, smart grids, sustainability, and energy policy for self-sufficiency.</p>
-                    </div>
-                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
-                        <i data-lucide="satellite" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
-                        <h3 class="text-xl font-semibold text-white mb-2">Telecommunications</h3>
-                        <p class="text-gray-400 text-sm">Exploring 5G adoption, digital infrastructure, connectivity, and the future of communication.</p>
-                    </div>
-                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
-                        <i data-lucide="heart-pulse" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
-                        <h3 class="text-xl font-semibold text-white mb-2">Biomedical Engineering</h3>
-                        <p class="text-gray-400 text-sm">Integrating engineering and medicine to advance healthcare technology and medical devices.</p>
-                    </div>
-                    <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
-                        <i data-lucide="globe" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
-                        <h3 class="text-xl font-semibold text-white mb-2">Geo Science</h3>
-                        <p class="text-gray-400 text-sm">Utilizing satellite imagery, GIS, and remote sensing for infrastructure and resource management.</p>
-                    </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto gap-8">
+                    
+                    <a href="electronics.html" class="block">
+                        <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                            <i data-lucide="circuit-board" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Electronics and Smart Manufacturing</h3>
+                            <p class="text-gray-400 text-sm">Innovations in hardware, smart production, IoT, and building resilient supply chains.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="computing.html" class="block">
+                        <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                            <i data-lucide="code-2" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Computing</h3>
+                            <p class="text-gray-400 text-sm">Leveraging AI, data science, cybersecurity, and software engineering to power the digital economy.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="power-energy.html" class="block">
+                        <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                            <i data-lucide="wind" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Power & Energy</h3>
+                            <p class="text-gray-400 text-sm">Focusing on renewable energy, smart grids, sustainability, and energy policy for self-sufficiency.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="telecommunications.html" class="block">
+                        <div class="bg-brand-dark p-6 rounded-lg shadow-xl border border-brand-light transform hover:scale-105 hover:border-brand-accent-blue transition duration-300">
+                            <i data-lucide="satellite" class="w-8 h-8 text-brand-accent-blue mb-3"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Telecommunications</h3>
+                            <p class="text-gray-400 text-sm">Exploring 5G adoption, digital infrastructure, connectivity, and the future of communication.</p>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
         </section>
@@ -195,7 +252,7 @@
                 <div class="text-center mb-12">
                     
                     <div class="max-w-32 mx-auto bg-white p-4 rounded-lg shadow-xl mb-8">
-                        <img src="waters_edge_banner.png" alt="Waters Edge Banner" 
+                        <img src="res/images/waters_edge_banner.png" alt="Waters Edge Banner" 
                              class="aspect-[1/1] object-contain w-full"
                              onerror="this.onerror=null;this.src='https://placehold.co/128x128/ffffff/0a101f?text=Image+Error';">
                     </div>
@@ -219,7 +276,7 @@
                     <div class="flex items-center space-x-4">
                         <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">09:15 AM</span>
                         <div class="w-4 h-4 bg-brand-accent-teal rounded-full"></div>
-                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Keynote Speech: "Sri Lanka's Digital 2030 Vision"</div>
+                        <div class="bg-brand-medium border border-brand-light p-4 rounded-lg flex-1">Ignite Speech: "Sri Lanka's Digital 2030 Vision"</div>
                     </div>
                     <div class="flex items-center space-x-4">
                         <span class="text-brand-accent-teal font-semibold w-24 text-right text-sm">09:45 AM</span>
@@ -275,23 +332,23 @@
                 <div class="flex flex-wrap justify-center gap-12">
     
                     <div class="flex flex-col items-center text-center">
-                        <img src="prof_vasanthapriyan.jpg" alt="Professor Vasanthapriyan" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                        <img src="res/images/prof_vasanthapriyan.jpg" alt="Professor Vasanthapriyan" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
                              onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=V.V.';">
                         <h4 class="text-lg font-semibold text-white">Prof. S. Vasanthapriyan</h4>
                         <p class="text-gray-400">Chair, IEEE Sri Lanka Section</p>
-                        <a href="mailto:vasanthapriyan@ieee.org" class="text-brand-accent-blue hover:text-brand-accent-teal">priyan@appsc.sab.ac.lk</a>
+                        <a href="mailto:priyan@appsc.sab.ac.lk" class="text-brand-accent-blue hover:text-brand-accent-teal">priyan@appsc.sab.ac.lk</a>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <img src="Samitha_Wijesundera.jpg" alt="Samitha Wijesundara" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                        <img src="res/images/Samitha_Wijesundera.jpg" alt="Samitha Wijesundara" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
                              onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=S.W.';">
                         <h4 class="text-lg font-semibold text-white">Samitha Wijesundara</h4>
                         <p class="text-gray-400">Secretary, IEEE YPSL</p>
-                        <a href="mailto:samithaw@ieee.org" class="text-brand-accent-blue hover:text-brand-accent-teal">samitha.w@ieee.org</a>
+                        <a href="mailto:samitha.w@ieee.org" class="text-brand-accent-blue hover:text-brand-accent-teal">samitha.w@ieee.org</a>
                     </div>
                     
                     <div class="flex flex-col items-center text-center">
-                        <img src="viraj.jpg" alt="Viraj Ariyawangsha" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                        <img src="res/images/viraj.jpg" alt="Viraj Ariyawangsha" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
                              onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=V.A.';">
                         <h4 class="text-lg font-semibold text-white">Viraj Ariyawangsha</h4>
                         <p class="text-gray-400">Co-Chair, IEEE IAG RT 2025</p>
@@ -299,7 +356,7 @@
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <img src="tharushi.jpg" alt="Tharushi Liyanage" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
+                        <img src="res/images/tharushi.jpg" alt="Tharushi Liyanage" class="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-brand-light"
                              onerror="this.onerror=null;this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=T.L.';">
                         <h4 class="text-lg font-semibold text-white">Tharushi Liyanage</h4>
                         <p class="text-gray-400">Co-Chair, IEEE IAG RT 2025</p>

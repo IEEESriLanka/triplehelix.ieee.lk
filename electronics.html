@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics and Smart Manufacturing Track</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body class="bg-brand-dark text-gray-300 antialiased">
+
+    <header class="bg-brand-dark/90 backdrop-blur-md sticky top-0 z-50 shadow-lg border-b border-brand-light/50">
+        <nav class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white tracking-tight">
+                IEEE SL <span class="text-brand-accent-blue">IAG Roundtable</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html#home" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Home</a>
+                <div class="relative group">
+                    <a href="index.html#tracks" class="text-brand-accent-blue transition duration-300 inline-flex items-center space-x-1">
+                        <span>Tracks</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-brand-accent-blue group-hover:text-brand-accent-blue"></i>
+                    </a>
+                    <div class="absolute left-1/2 -translate-x-1/2 mt-0 w-64 rounded-md shadow-2xl z-20 hidden group-hover:block 
+                                bg-brand-medium border border-brand-light/50 backdrop-blur-sm overflow-hidden">
+                        <a href="#track-details" class="block px-4 py-3 text-sm text-brand-accent-blue bg-brand-light transition duration-150 border-b border-brand-dark/50">
+                            Electronics and Smart Manufacturing
+                        </a>
+                        <a href="computing.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150 border-b border-brand-dark/50">
+                            Computing
+                        </a>
+                        <a href="power-energy.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150 border-b border-brand-dark/50">
+                            Power & Energy
+                        </a>
+                        <a href="telecommunications.html" class="block px-4 py-3 text-sm text-gray-300 hover:bg-brand-light hover:text-brand-accent-blue transition duration-150">
+                            Telecommunications
+                        </a>
+                    </div>
+                </div>
+                <a href="index.html#agenda" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Program</a>
+                <a href="index.html#contact" class="text-gray-300 hover:text-brand-accent-blue transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="min-h-[60vh] py-20" id="track-details">
+        <div class="container mx-auto max-w-4xl px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Electronics and Smart Manufacturing
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+                **Focus:** Innovations in hardware, smart production, IoT, and building resilient supply chains.
+            </p>
+            <p class="text-lg text-gray-400 mt-8">
+                Details regarding speakers, specific discussion panels, and outcomes for this track will be updated soon.
+            </p>
+        </div>
+    </main>
+    
+    <footer class="bg-brand-dark py-8 border-t border-brand-light/50">
+        <div class="container mx-auto max-w-7xl px-6 text-center text-gray-400">
+            <p>&copy; 2025 IEEE Sri Lanka Section. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                Advancing Technology for Humanity
+            </p>
+            <p class="text-sm mt-2">
+                Visit: <a href="https://ieee.lk" target="_blank" rel="noopener noreferrer" class="text-brand-accent-blue hover:text-brand-accent-teal underline">IEEE Sri Lanka Section</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
