@@ -18,7 +18,6 @@ body {
 }
 
 /* Custom classes for visual effects */
-/* Note: text-glow removed as requested */
 .card-glow {
     box-shadow: 0 0 15px rgba(14, 165, 233, 0.1), 0 0 5px rgba(14, 165, 233, 0.05);
 }
