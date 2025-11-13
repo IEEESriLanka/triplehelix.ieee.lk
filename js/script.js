@@ -1,21 +1,3 @@
-// Tailwind custom theme configuration
-tailwind.config = {
-    theme: {
-        extend: {
-            colors: {
-                'brand-dark': '#0a101f', // Very dark blue/charcoal
-                'brand-medium': '#111827', // Gray-900
-                'brand-light': '#1f2937', // Gray-800
-                'brand-accent-blue': '#0ea5e9', // Sky-500
-                'brand-accent-teal': '#06b6d4', // Cyan-500
-            },
-            fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-            },
-        },
-    },
-};
-
 // =======================================================
 // CAROUSEL LOGIC (Pure JavaScript)
 // =======================================================
@@ -66,5 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize: Ensure the carousel starts correctly
         updateCarousel();
+    }
+
+    // =======================================================
+    // 3. MOBILE MENU TOGGLE (Improved version)
+    // =======================================================
+    const btn = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            // re-render icons for dropdown arrows when menu opens
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            }
+        });
     }
 });
